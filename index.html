@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Speech to Text</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="centered">
+      <div class="center">
+        <h2>Speech to Text</h2>
+      </div>
+      <hr />
+      <div class="left">
+        <button class="bg-green" id="startButton">Start Talking</button>
+        <button class="bg-red disabled" id="stopButton">Stop Talking</button>
+        <button class="bg-white" id="clearButton">Clear Preview</button>
+        <select id="language">
+          <option value="en-US">English</option>
+          <option value="bn-BD">Bangla</option>
+          <option value="ar-SA">Arabic</option>
+          <option value="es-ES">Spanish</option>
+          <option value="fr-FR">French</option>
+          <option value="ja-JP">Japanese</option>
+        </select>
+      </div>
+
+      <div class="right">
+        <span><b>Status:</b></span>
+        <span id="talkingStatus">Not Talking</span>
+        <br />
+      </div>
+      <div style="clear: both;"></div>
+      <div id="textPreview" class="preview"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
